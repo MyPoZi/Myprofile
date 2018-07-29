@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="MyPoZiのプロフィール">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyPoZiのプロフィール</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var nav = $('.navbar');
+            var navTop = nav.offset().top;
+            $(window).scroll(function () {
+                var winTop = $(this).scrollTop();
+                if (winTop >= navTop) {
+                    nav.addClass('fixed')
+                } else if (winTop <= navTop) {
+                    nav.removeClass('fixed')
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1><a href="index.html">
+                <img src="images/logo-clean-resize.png" alt="MyPoZi-logo">
+            </a>
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="portfolios/index.html">Portfolios</a></li>
+            <li><a href="skills/index.html">Skills</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <main>
+                <div class="main-inner">
+                    <p align="right">2018-07-29</p>
+                    <h1>自己紹介</h1>
+                    <div class="center"><img class="icon" src="images/icon.jpg" alt="MyPoZi-icon"></div>
+                    <h2>名前</h2>
+                    <p>MyPoZi(まいぽじ)</p>
+                    <h2>趣味</h2>
+                    <ul>
+                        <li>
+                            旅行
+                        </li>
+                        <li>
+                            カメラ
+                        </li>
+                        <li>
+                            ピアノ
+                        </li>
+                        <li>
+                            プログラミング
+                        </li>
+                        <li>
+                            ゲーム
+                        </li>
+                    </ul>
+                    <h2>挑戦したいこと</h2>
+                    <ul>
+                        <li>
+                            スマートフォンやパソコンを置いて旅に出る
+                        </li>
+                        <li>
+                            留学
+                        </li>
+                        <li>
+                            一人〇〇 ex.焼肉、遊園地
+                        </li>
+                    </ul>
+                    <h2>挑戦したこと</h2>
+                    <ul>
+                        <li>
+                            アルバイト
+                        </li>
+                        <li>
+                            ナンパ
+                        </li>
+                    </ul>
+                    <h2>好きなもの</h2>
+                    <ul>
+                        <li>
+                            ボカロ
+                        </li>
+                        <li>
+                            ヨルシカ
+                        </li>
+                    </ul>
+                    <h3>コメント<p>最近WEB方面に寄りつつあります。弱い型付けがあまり好みではないです。現在何が本当に好きなのか分からないため、がむしゃらに様々なことやってます。</p></h3>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        <hr class="footer-line">
+        <div class="footer-inner">
+            <p class="copyright">Copyright © 2018 MyPoZi All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

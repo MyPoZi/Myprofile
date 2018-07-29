@@ -1,0 +1,117 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+  background: #d5ccb4;
+}
+nav{
+  margin-bottom: 20px;
+}
+ul{
+  list-style-type: square;
+}
+.header-inner{
+  padding: 10px 10px 0 10px;
+  background: #ffff55;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar{
+  margin: 0;
+  padding: 5px 5px;
+  background: #565656;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar a{
+  display:block;
+  border-left:1px solid #cccccc;
+  border-right:1px solid #cccccc;
+  text-align:center;
+}
+.navbar li a{
+  padding: 10px 10px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%
+}
+.navbar li a:hover{
+  background: #fff;
+  color: #565656;
+}
+.main-inner{
+  padding: 20px 10px 20px 10px;
+  background: #fff;
+  border: 5px solid #767164;
+  border-radius: 10px
+}
+.main-inner h2 {
+	clear: both;
+	margin-bottom: 15px;
+	color: #fff;
+	padding: 5px 20px;
+	background: #767164;
+	border-radius: 4px;
+}
+.main-inner h3 {
+	clear: both;
+	margin-bottom: 15px;
+	padding: 3px 20px;
+	border-radius: 4px;
+	border: 2px solid #767164;
+}
+.main-inner p {
+	padding: 7px 20px 14px;
+}
+.main-inner p + p {
+	padding-top: 0px;
+}
+.main-inner h2 + p,
+.main-inner h3 + p {
+	padding-top: 0px;
+	margin-top: -5px;
+}
+.sidebar-inner{
+  padding: 20px 10px 20px 10px;
+  background: #c0f5b9;
+}
+.footer-inner{
+  padding: 20px 16px 10px 16px;
+  background: #ffff55;
+}
+.container{
+  margin: 0 auto 0 auto;
+  padding: 0 16px;
+  max-width: 1000px;
+}
+.copyright{
+  text-align: center;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.footer-line{
+  margin: 20px 0 0 0;
+  height: 0px;
+  border: none;
+  border-top: 5px #565656 solid;
+}
+.icon{
+  border-radius: 50%;
+  width: 30%;
+}
+.center{
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="MyPoZiのプロフィール">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyPoZiのプロフィール</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var nav = $('.navbar');
+            var navTop = nav.offset().top;
+            $(window).scroll(function () {
+                var winTop = $(this).scrollTop();
+                if (winTop >= navTop) {
+                    nav.addClass('fixed')
+                } else if (winTop <= navTop) {
+                    nav.removeClass('fixed')
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1><a href="../index.html">
+                <img src="../images/logo-clean-resize.png" alt="MyPoZi-logo">
+            </a>
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Profile</a></li>
+            <li><a href="../portfolios/index.html">Portfolios</a></li>
+            <li><a href="../skills/index.html">Skills</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <main>
+                <div class="main-inner">
+                    <p class="main-title">Main</p>
+                </div>
+            </main>
+        </div>
+    </section>
+    <footer>
+        <hr class="footer-line">
+        <div class="footer-inner">
+            <p class="copyright">Copyright © 2018 MyPoZi All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
