@@ -1,7 +1,9 @@
 @charset "UTF-8";
-body{
+
+html,body{
   margin: 0;
   background: #d5ccb4;
+  font-family: sans-serif;
 }
 nav{
   margin-bottom: 20px;
@@ -23,7 +25,9 @@ ul{
   background: #565656;
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; IEで動かない*/
+  justify-content: space-around;
+  flex: 1 0 0%
 }
 .navbar a{
   display:block;
@@ -35,7 +39,7 @@ ul{
   padding: 10px 10px;
   color: #fff;
   text-decoration: none;
-  width: 100%
+  width: 100%;
 }
 .navbar li a:hover{
   background: #fff;
@@ -114,4 +118,7 @@ ul{
 }
 .center{
   text-align: center;
+}
+.twitter{
+  display: inline;
 }
