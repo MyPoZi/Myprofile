@@ -8,21 +8,6 @@
     <title>MyPoZiのプロフィール</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            var nav = $('.navbar');
-            var navTop = nav.offset().top;
-            $(window).scroll(function () {
-                var winTop = $(this).scrollTop();
-                if (winTop >= navTop) {
-                    nav.addClass('fixed')
-                } else if (winTop <= navTop) {
-                    nav.removeClass('fixed')
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -49,13 +34,13 @@
                     <p>今までで作ったプログラムや旅行で行った場所の写真を載せてあります</p>
                     <ul class="portfolio">
                         <li>
-                            <a href="../index.html"><figure><i class="fas fa-laptop-code fa-10x"></i>
+                            <a href="program/index.html"><figure><i class="fas fa-laptop-code fa-10x"></i>
                                     <figcaption>Program</figcaption>
                                 </figure>
                             </a>
                         </li>
                         <li>
-                            <a href="../index.html"><figure><i class="fas fa-camera fa-10x"></i>
+                            <a href="photo/index.html"><figure><i class="fas fa-camera fa-10x"></i>
                                     <figcaption>Photo</figcaption>
                                 </figure>
                             </a>
