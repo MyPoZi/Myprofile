@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MyPoZiのプロフィール</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -29,67 +29,65 @@
     </nav>
     <section>
         <div class="container">
-            <main>
-                <div class="main-inner">
-                    <p align="right">2018-07-29</p>
-                    <h1>Profile</h1>
-                    <div class="center"><img class="icon" src="images/icon.jpg" alt="MyPoZi-icon"></div>
-                    <h2>名前</h2>
-                    <p>MyPoZi(まいぽじ)</p>
-                    <h2>趣味</h2>
-                    <ul>
-                        <li>
-                            旅行
-                        </li>
-                        <li>
-                            カメラ
-                        </li>
-                        <li>
-                            ピアノ
-                        </li>
-                        <li>
-                            プログラミング
-                        </li>
-                        <li>
-                            ゲーム
-                        </li>
-                    </ul>
-                    <h2>挑戦したいこと</h2>
-                    <ul>
-                        <li>
-                            スマートフォンやパソコンを置いて旅に出る
-                        </li>
-                        <li>
-                            留学
-                        </li>
-                        <li>
-                            海外旅行
-                        </li>
-                        <li>
-                            一人〇〇 ex.焼肉、遊園地
-                        </li>
-                    </ul>
-                    <h2>挑戦したこと</h2>
-                    <ul>
-                        <li>
-                            アルバイト
-                        </li>
-                        <li>
-                            ナンパ
-                        </li>
-                    </ul>
-                    <h2>好きなもの</h2>
-                    <ul>
-                        <li>
-                            ボカロ
-                        </li>
-                        <li>
-                            ヨルシカ
-                        </li>
-                    </ul>
-                    <h3>コメント<p>最近WEB方面に寄りつつあります。弱い型付けがあまり好みではないです。現在何が本当に好きなのか分からないため、がむしゃらに様々なことやってます。</p></h3>
-                </div>
-            </main>
+            <div class="main-inner">
+                <h1>Profile</h1>
+                <p align="right">2018-07-29</p>
+                <div class="center"><img class="icon" src="images/icon.jpg" alt="MyPoZi-icon"></div>
+                <h2>名前</h2>
+                <p>MyPoZi(まいぽじ)</p>
+                <h2>趣味</h2>
+                <ul>
+                    <li>
+                        旅行
+                    </li>
+                    <li>
+                        カメラ
+                    </li>
+                    <li>
+                        ピアノ
+                    </li>
+                    <li>
+                        プログラミング
+                    </li>
+                    <li>
+                        ゲーム
+                    </li>
+                </ul>
+                <h2>挑戦したいこと</h2>
+                <ul>
+                    <li>
+                        スマートフォンやパソコンを置いて旅に出る
+                    </li>
+                    <li>
+                        留学
+                    </li>
+                    <li>
+                        海外旅行
+                    </li>
+                    <li>
+                        一人〇〇 ex.焼肉、遊園地
+                    </li>
+                </ul>
+                <h2>挑戦したこと</h2>
+                <ul>
+                    <li>
+                        アルバイト
+                    </li>
+                    <li>
+                        ナンパ
+                    </li>
+                </ul>
+                <h2>好きなもの</h2>
+                <ul>
+                    <li>
+                        ボカロ
+                    </li>
+                    <li>
+                        ヨルシカ
+                    </li>
+                </ul>
+                <h3>コメント<p>最近WEB方面に寄りつつあります。弱い型付けがあまり好みではないです。現在何が本当に好きなのか分からないため、がむしゃらに様々なことやってます。</p></h3>
+            </div>
         </div>
     </section>
     <footer>
@@ -99,5 +97,18 @@
             </p>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDXAeVNMEWTPAIpgcjxGgU32AA75K5T1Lc",
+            authDomain: "mypozi555.firebaseapp.com",
+            databaseURL: "https://mypozi555.firebaseio.com",
+            projectId: "mypozi555",
+            storageBucket: "mypozi555.appspot.com",
+            messagingSenderId: "21224871074"
+        };
+        firebase.initializeApp(config);
+    </script>
 </body>
 </html>
