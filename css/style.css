@@ -11,6 +11,11 @@ nav{
 ul{
   list-style-type: square;
 }
+img {
+width:100%;
+max-width: 100%;
+height: auto;
+}
 .header-inner{
   padding: 10px 10px 0 10px;
   background: #ffff55;
@@ -159,4 +164,11 @@ ul{
 .portfolio a{
   color: #393939;
   text-decoration: none;
+}
+.bring p{
+  margin: 0;
+  padding: 0;
+}
+.day{
+  text-align: center
 }
